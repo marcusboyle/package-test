@@ -1,2 +1,2 @@
 # package_test
-Testing Python packaging
+This repo is a simple test to create a sample Python package.
