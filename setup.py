@@ -16,7 +16,7 @@ setup(
     description='Python package test',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    url="https://github.com/marcusboyle/package_test",
+    url='https://github.com/marcusboyle/package_test',
     packages=find_packages(),
     python_requires='>=3.7',
     install_requires=reqs,
