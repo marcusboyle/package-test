@@ -2,11 +2,16 @@ import os
 from setuptools import setup, find_packages
 
 
+# Use README.md for long description
 with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
+# Requirements
+with open('requirements.txt', 'r') as f:
+    reqs = f.read().splitlines()
+
 setup(
-    name='package_test',
+    name='my_package',
     author='Marcus',
     description='Python package test',
     long_description=long_description,
@@ -14,5 +19,6 @@ setup(
     url="https://github.com/marcusboyle/package_test",
     packages=find_packages(),
     python_requires='>=3.7',
+    install_requires=reqs,
     zip_safe=False
 )
