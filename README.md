@@ -1,7 +1,10 @@
 # package_test
 This repo is a simple test to create a sample Python package.
 
-Structure (note that `my_package` is the package that will be created):
+***
+## Repo structure
+
+Below is the structure of this repository. Note that `my_package` is the package that will be created.
 - `package_test`
   - `README.md`
   - `.gitignore`
@@ -16,6 +19,7 @@ Structure (note that `my_package` is the package that will be created):
         - `numpy_module.py`
 
 ***
+## Overview
 
 As a general guide, here are the steps to create a package:
 1. Create a repository, e.g. `package_test`.
@@ -25,4 +29,17 @@ As a general guide, here are the steps to create a package:
     - All modules/functions/classes/etc. that are available to `__init__.py` will become an attribute of the package.
     - This will need to be repeated for all sub-directories inside the package (i.e., add another `__init__.py` and import all modules/attributes you want to be available here -- see the example in `my_package/tools/__init__.py`).
 4. In the top level of the repository, add a file called `setup.py`. You will need to fill out a setuptools.setup() call - see the file in this repo for an example.
-5. You're now ready to pip install! Simply run `pip install .` (or more generally, `pip install path/to/repo`) to install this repository as a package. This will add the package to `Lib/site-packages` in your current Python installation/interpreter. You'll now be able to import it from any directory.
+5. You're now ready to pip install!
+
+***
+## Pip installing the package
+### Installing from a local repository
+
+If you have this repository available locally (e.g. you've cloned it), then while inside `package_test`, simply run `pip install .` (or more generally, `pip install path/to/repo`) to install this repository as a package. This will add the package to `Lib/site-packages` in your current Python installation/interpreter. You'll now be able to import it from any directory.
+
+### Installing this package from GitHub remote
+
+Rather than cloning the repository to have a local copy, you can directly install this package with only one line of code (no need to clone etc.). Simply run the following:
+```
+pip install git+git://github.com/marcusboyle/package_test.git
+```
