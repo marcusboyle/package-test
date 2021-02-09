@@ -39,7 +39,7 @@ As a general guide, here are the steps to create a package:
 
 If you have this repository available locally (e.g. you've cloned it), then while inside `package_test`, simply run `pip install .` (or more generally, `pip install path/to/repo`) to install this repository as a package. This will add the package to `Lib/site-packages` in your current Python installation/interpreter. You'll now be able to import it from any directory.
 
-### Installing this package from GitHub remote
+### Installing from GitHub remote
 
 Rather than cloning the repository to have a local copy, you can directly install this package with only one line of code (no need to clone etc.). Simply run the following:
 ```
