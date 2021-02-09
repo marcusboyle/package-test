@@ -8,7 +8,8 @@ Below is the structure of this repository. Note that `my_package` is the package
 - `package_test`
   - `README.md`
   - `.gitignore`
-  - `requirements.txt`
+  - `create_venv.sh`
+  - `requirements.in`
   - `setup.py`
   - `my_package`
     - `__init__.py`

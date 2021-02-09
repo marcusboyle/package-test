@@ -7,7 +7,7 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()
 
 # Requirements
-with open('requirements.txt', 'r') as f:
+with open('requirements.in', 'r') as f:
     reqs = f.read().splitlines()
 
 setup(
