@@ -30,6 +30,7 @@ As a general guide, here are the steps to create a package:
     - All modules/functions/classes/etc. that are available to `__init__.py` will become an attribute of the package.
     - This will need to be repeated for all sub-directories inside the package (i.e., add another `__init__.py` and import all modules/attributes you want to be available here -- see the example in `my_package/tools/__init__.py`).
 4. In the top level of the repository, add a file called `setup.py`. You will need to fill out a setuptools.setup() call - see the file in this repo for an example.
+    - Note that, if you want your package to automatically install dependencies, you will need to create a requirements file containing all dependencies that need to be installed (see `requirements.in` for an example). These can then be passed in (as a list of strings for each package) to the `install_requires` parameter in `setup()`.
 5. You're now ready to pip install!
 
 ***
