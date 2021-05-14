@@ -1,11 +1,11 @@
-# package_test
+# package-test
 This repo is a simple test to create a sample Python package.
 
 ***
 ## Repo structure
 
 Below is the structure of this repository. Note that `my_package` is the package that will be created.
-- `package_test`
+- `package-test`
   - `README.md`
   - `.gitignore`
   - `create_venv.sh`
@@ -23,7 +23,7 @@ Below is the structure of this repository. Note that `my_package` is the package
 ## Overview
 
 As a general guide, here are the steps to create a package:
-1. Create a repository, e.g. `package_test`.
+1. Create a repository, e.g. `package-test`.
 2. Create a subdirectory inside this repository - this will be your package.
     - The name of this subdirectory will be the name of your package. Let's refer to it as `my_package`.
 3. Inside `my_package`, add an `__init__.py` file. This will define all of the imports to conduct when importing your package.
@@ -37,11 +37,11 @@ As a general guide, here are the steps to create a package:
 ## Pip installing the package
 ### Installing from a local repository
 
-If you have this repository available locally (e.g. you've cloned it), then while inside `package_test`, simply run `pip install .` (or more generally, `pip install path/to/repo`) to install this repository as a package. This will add the package to `Lib/site-packages` in your current Python installation/interpreter. You'll now be able to import it from any directory.
+If you have this repository available locally (e.g. you've cloned it), then while inside `package-test`, simply run `pip install .` (or more generally, `pip install path/to/repo`) to install this repository as a package. This will add the package to `Lib/site-packages` in your current Python installation/interpreter. You'll now be able to import it from any directory.
 
 ### Installing from GitHub remote
 
 Rather than cloning the repository to have a local copy, you can directly install this package with only one line of code (no need to clone etc.). Simply run the following:
 ```
-pip install git+git://github.com/marcusboyle/package_test.git
+pip install git+git://github.com/marcusboyle/package-test.git
 ```
